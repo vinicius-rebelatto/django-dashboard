@@ -1,2 +1,4 @@
 python-decouple
 supabase
+psycopg2
+psycopg2-binary
