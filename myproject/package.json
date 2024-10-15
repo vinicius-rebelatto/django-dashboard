@@ -4,6 +4,6 @@
   },
 
   "scripts": {
-    "build-css": "sass dashboard/static/custom.scss dashboard/static/custom.css"
+    "build-css": "sass --quiet-deps dashboard/static/custom.scss dashboard/static/custom.css"
   }
 }
