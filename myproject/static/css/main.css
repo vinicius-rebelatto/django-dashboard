@@ -11844,8 +11844,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/*body {
-    background-color: #D4D4D4;
-}*/
+body {
+  background-color: #f8f9fa;
+}
 
-/*# sourceMappingURL=custom.css.map */
+/* // static/scss/main.scss
+@import ;
+
+// Your custom styles
+body {
+  background-color: #f8f9fa} */
+
+/*# sourceMappingURL=main.css.map */
