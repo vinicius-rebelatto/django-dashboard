@@ -19,3 +19,9 @@ class Article(models.Model):
 
     def __str__(self):
         return self.headline
+
+class Task(models.Model):
+    name = models.CharField(max_length=150)
+    description = models.CharField(max_length=255)
+    created_at = models.DateField(auto_now=True)
+    delivery_date = models.DateField()

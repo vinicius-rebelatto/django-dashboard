@@ -3,6 +3,8 @@
 from django.shortcuts import render
 
 from .models import Article
+from .models import Task
+from .forms import TaskForm
 
 
 def year_archive(request, year):
@@ -14,3 +16,12 @@ def year_archive(request, year):
 def my_view(request):
     # You can add any logic here
     return render(request, 'dashboard.html')
+
+def create_task(request):
+    if request.method == 'POST':
+        form = TaskForm(request.POST)
+        if form.is_valid():
+            form.save()
+    else:
+        form = TaskForm()
+    return render(request, 'tasks.html', {'form': form})
