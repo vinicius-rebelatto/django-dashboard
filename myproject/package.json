@@ -1,12 +1,11 @@
 {
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3",
-    "fs-extra": "^11.2.0"
+    "bootstrap": "^5.3.3"
   },
   "scripts": {
     "build-css": "sass --load-path=node_modules static/scss/main.scss static/css/main.css",
-    "build-js": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js static/js/"
+    "build-js": "copy node_modules/bootstrap/dist/js/bootstrap.bundle.min.js static/js/"
   },
   "name": "myproject",
   "version": "1.0.0",
@@ -16,6 +15,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "prettier": "3.3.3",
     "sass": "^1.80.3",
     "stylelint": "^16.10.0",
     "stylelint-config-standard-scss": "^13.1.0",

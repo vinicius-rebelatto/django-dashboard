@@ -6,4 +6,5 @@ from . import views
 
 urlpatterns = [
     path('', views.my_view,),
+    path("articles/<int:year>/", views.year_archive)
 ]
